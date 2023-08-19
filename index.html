@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-BOX</title>
+    <link rel="stylesheet" type="text/css" href="gr.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+body
+{
+    
+    font: 13px/1.5;
+    font-family: Helvetica, sans-serif;
+    color: aqua;
+}
+.container
+{
+    background:red;
+    width: 90%;
+    margin: 15px auto;
+}
+[class*="grid-"]
+{
+    float: left;
+    padding: 0 15px;
+}
+.container::after,.row::after
+{
+    content: '';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.row
+{
+    width: 100%;
+}
+.grid-1
+{
+    width: 8.33%;
+}
+.grid-2
+{
+    width: 16.66%;
+}
+.grid-3
+{
+    width: 25%;
+}
+.grid-4
+{
+    width: 33.33%;
+}
+.grid-5
+{
+    width: 41.66%;
+}
+.grid-6
+{
+    width: 50%;
+}
+.grid-7
+{
+    width: 58.33%;
+}
+.grid-8
+{
+    width: 66.66%;
+}
+.grid-9
+{
+    width: 75%;
+}
+.grid-10
+{
+    width: 83.33%;
+}
+.grid-11
+{
+    width:91.66%;
+}
+.grid-12
+{
+    width:100%;
+}
+.gin
+{
+    background-color: yellowgreen;
+    min-height: 100px;
+}
+
+
+img
+{
+    width: 90%;
+    min-height: 100px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+            <div class="grid-1"><div class="gin"></div></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="grid-2">
+                <div class="gin"></div>
+            </div>
+                <div class="grid-10">
+                    <div class="gin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="grid-9">
+                <div class="gin"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="gin">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="grid-4">
+                <div class="gin"></div>
+                </div>
+                <div class="grid-8">
+                    <div class="gin">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="grid-7">
+                <div class="gin"></div>
+                </div>
+                <div class="grid-5">
+                    <div class="gin">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="grid-6">
+                <div class="gin"></div>
+                </div>
+                <div class="grid-6">
+                    <div class="gin">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
